@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetData</title>
+</head>
+<body>
+    <h1>Enetr your Details</h1>
+    <form action="showData" method="post">
+        {% csrf_token %}
+        <p>FirstName: <input type="text" name="fname" required> </p>
+        <p>LastName: <input type="text" name="lname" required></p>
+        <input type="submit">
+    </form>
+</body>
+</html>
